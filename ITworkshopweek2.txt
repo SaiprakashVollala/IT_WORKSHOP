@@ -1,5 +1,8 @@
 
-//All Week 2 referenced terminal commands....
+IT WORK SHOP
+
+WEEK2 COMMANDS
+
 >>>......
 >>>>>.......
 >>>>>>>.........
@@ -51,44 +54,44 @@ touch file1 file2
  2042  sed 's/linux/LINUX/' sedfile.txt
  2043  sed 's/ linux / LINUX /' sedfile.txt
  2044  history
-(base) user@nmst-1402:~$ 
+(base) user@saiprakash:~$ 
 
-(base) user@nmst-1402:~$touch file1 file2
-(base) user@nmst-1402:~$ cat> file1
-tharun is a good boy
+(base) user@saiprakash:~$touch file1 file2
+(base) user@saiprakash:~$ cat> file1
+Ram is a good boy
 rgukt student basar
-native from warangal 
+native from Nizamabad 
 mahabubabad is a great district in telangana
-(base) user@nmst-1402:~$ cat> file2
-balaji is good boy 
+(base) user@saiprakash:~$ cat> file2
+krishna is good boy 
 rgukt student in basar
 native hyderabad
-kakinada khaja is sweet
-(base) user@nmst-1402:~$ cat file1 file2
-tharun is a good boy
+He loves to play the flute
+(base) user@saiprakash:~$ cat file1 file2
+Ram is a good boy
 rgukt student basar
-native from warangal
+native from Nizamabad
 mahabubabad is a great district in telangana
-balaji is good boy
+krishna is good boy
 rgukt student in basar
 native hyderabad
-kakinada khaja is sweet
-(base) user@nmst-1402:~$ cat> file1
+He loves to play the flute
+(base) user@saiprakash:~$ cat> file1
 end line 
-(base) user@nmst-1402:~$ cat file1 file2
+(base) user@saiprakash:~$ cat file1 file2
 end line
-balaji is good boy
+krishna is good boy
 rgukt student in basar
 native hyderabad
-kakinada khaja is sweet
-(base) user@nmst-1402:~$ grep "good" file2
-balaji is good boy
-(base) user@nmst-1402:~$ grep "d" file2
-balaji is good boy
+He loves to play the flute
+(base) user@saiprakash:~$ grep "good" file2
+krishna is good boy
+(base) user@saiprakash:~$ grep "d" file2
+krishna is good boy
 rgukt student in basar
 native hyderabad
-kakinada khaja is sweet
-(base) user@nmst-1402:~$ grep -n"d" file2
+He loves to play the flute
+(base) user@saiprakash:~$ grep -n"d" file2
 grep: invalid argument ‘file2’ for ‘--directories’
 Valid arguments are:
   - ‘read’
@@ -96,39 +99,39 @@ Valid arguments are:
   - ‘skip’
 Usage: grep [OPTION]... PATTERNS [FILE]...
 Try 'grep --help' for more information.
-(base) user@nmst-1402:~$ grep -n "d" file2
-1:balaji is good boy
+(base) user@saiprakash:~$ grep -n "d" file2
+1:krishna is good boy
 2:rgukt student in basar
 3:native hyderabad
-4:kakinada khaja is sweet
-(base) user@nmst-1402:~$ grep -h "d" file2
-balaji is good boy
+4:He loves to play the flute
+(base) user@saiprakash:~$ grep -h "d" file2
+krishna is good boy
 rgukt student in basar
 native hyderabad
-kakinada khaja is sweet
-(base) user@nmst-1402:~$ grep -h "good" file2
-balaji is good boy
-(base) user@nmst-1402:~$ grep -n "good" file2
-1:balaji is good boy
-(base) user@nmst-1402:~$ grep -v "good" file2
+He loves to play the flute
+(base) user@saiprakash:~$ grep -h "good" file2
+krishna is good boy
+(base) user@saiprakash:~$ grep -n "good" file2
+1:krishna is good boy
+(base) user@saiprakash:~$ grep -v "good" file2
 rgukt student in basar
 native hyderabad
-kakinada khaja is sweet
-(base) user@nmst-1402:~$ grep -e "good" file2
-balaji is good boy
-(base) user@nmst-1402:~$ grep -e "gd" file2
-(base) user@nmst-1402:~$ grep -e "g" file2
-balaji is good boy
+He loves to play the flute
+(base) user@saiprakash:~$ grep -e "good" file2
+krishna is good boy
+(base) user@saiprakash:~$ grep -e "gd" file2
+(base) user@saiprakash:~$ grep -e "g" file2
+krishna is good boy
 rgukt student in basar
-(base) user@nmst-1402:~$ grep -e "g" -e "k"  file2
-balaji is good boy
+(base) user@saiprakash:~$ grep -e "g" -e "k"  file2
+krishna is good boy
 rgukt student in basar
-kakinada khaja is sweet
-(base) user@nmst-1402:~$ grep -o "good"  file2
+He loves to play the flute
+(base) user@saiprakash:~$ grep -o "good"  file2
 good
-(base) user@nmst-1402:~$ grep -n -o "good"  file2
+(base) user@saiprakash:~$ grep -n -o "good"  file2
 1:good
-(base) user@nmst-1402:~$ cat> month
+(base) user@saiprakash:~$ cat> month
 jan
 sept
 oct
@@ -137,7 +140,7 @@ aug
 dec
 feb
 may
-(base) user@nmst-1402:~$ sort month
+(base) user@saiprakash:~$ sort month
 aug
 dec
 feb
@@ -146,19 +149,7 @@ july
 may
 oct
 sept
-(base) user@nmst-1402:~$ cat> month
-jan
-sept
-oct
-july
-aug
-dec
-feb
-may
-feb
-may
-jan
-(base) user@nmst-1402:~$ cat month
+(base) user@saiprakash:~$ cat> month
 jan
 sept
 oct
@@ -170,7 +161,19 @@ may
 feb
 may
 jan
-(base) user@nmst-1402:~$ sort month
+(base) user@saiprakash:~$ cat month
+jan
+sept
+oct
+july
+aug
+dec
+feb
+may
+feb
+may
+jan
+(base) user@saiprakash:~$ sort month
 aug
 dec
 feb
@@ -182,7 +185,7 @@ may
 may
 oct
 sept
-(base) user@nmst-1402:~$ sort -M month
+(base) user@saiprakash:~$ sort -M month
 jan
 jan
 feb
@@ -194,7 +197,7 @@ aug
 sept
 oct
 dec
-(base) user@nmst-1402:~$ sort -n month
+(base) user@saiprakash:~$ sort -n month
 aug
 dec
 feb
@@ -206,7 +209,7 @@ may
 may
 oct
 sept
-(base) user@nmst-1402:~$ cat > num
+(base) user@saiprakash:~$ cat > num
 1
 2 
 5
@@ -217,7 +220,7 @@ sept
 44
 33
 57
-(base) user@nmst-1402:~$ sort num
+(base) user@saiprakash:~$ sort num
 1
 
 2
@@ -228,7 +231,7 @@ sept
 5
 57
 65
-(base) user@nmst-1402:~$ sort -n num
+(base) user@saiprakash:~$ sort -n num
 
 1
 2
@@ -239,7 +242,7 @@ sept
 57
 65
 34356
-(base) user@nmst-1402:~$ sort -u num
+(base) user@saiprakash:~$ sort -u num
 1
 
 2
